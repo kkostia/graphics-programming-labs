@@ -49,8 +49,8 @@
         ctx.fill();
         ctx.stroke();
 
-      const squareX = 350;
-      const squareY = 100; 
+      const squareX = 550;
+      const squareY = 200; 
       const squareSize = 100; 
       
 
@@ -67,8 +67,13 @@
       ctx.fill();
       ctx.stroke();
 
-	  
-		
+      ctx.beginPath();
+      ctx.arc(600, 150, 50, 0, Math.PI / 2, true); // Quarter circle
+      ctx.strokeStyle = 'red';
+      ctx.stroke();
+
+
+          
     </script>
 
   </body>
