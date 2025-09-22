@@ -26,17 +26,16 @@
         ctx.textAlign = "center";
         ctx.font = "30px Arial";
         ctx.fillText("Kostiantyn Panasenko", canvas.width / 2, canvas.height / 2);
+      
 
         ctx.fillStyle = "rgba(255, 0, 0, 0.4)";
         ctx.fillRect(50, 50, 100, 100);
+        ctx.stroke();
         ctx.fillStyle = "rgba(0, 0, 255, 0.4)";
         ctx.fillRect(70, 70, 100, 100);
-
-        ctx.fillStyle = "rgba(255, 255, 0, 0.4)";
-        ctx.beginPath();
-        ctx.arc(220, 220, 50, 0, 2 * Math.PI);
-        ctx.fill();
         ctx.stroke();
+
+        
 
         ctx.fillStyle = "rgba(255, 255, 0, 0.4)";
         ctx.beginPath();
@@ -50,14 +49,24 @@
         ctx.fill();
         ctx.stroke();
 
-		// Gets a handle to the element with id canvasOne.
-		
-		// Set the canvas up for drawing in 2D.
-		
-		// Set the fill colour to bright red.
-		
-		// Create a filled rectangle 
-		
+      const squareX = 350;
+      const squareY = 100; 
+      const squareSize = 100; 
+      
+
+      ctx.fillStyle = "rgba(0, 0, 255, 0.4)"; 
+      ctx.fillRect(squareX, squareY, squareSize, squareSize);
+
+      
+      ctx.fillStyle = "rgba(255, 255, 0, 0.6)";
+      ctx.beginPath();
+      ctx.moveTo(squareX + squareSize / 2, squareY); 
+      ctx.lineTo(squareX, squareY + squareSize); 
+      ctx.lineTo(squareX + squareSize, squareY + squareSize);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
 	  
 		
     </script>
